@@ -1,0 +1,37 @@
+import dont.*
+
+describe "test dont" {
+
+test "testCiudad" {
+	var ciudad = new Dont(13)
+	ciudad.agregarResultado("Juntos", 5013)
+	ciudad.agregarResultado("Unidad", 2096)
+	ciudad.agregarResultado("Evo", 1390)
+	ciudad.agregarResultado("Pais", 397)
+	ciudad.agregarResultado("Fit", 384)
+	ciudad.agregarResultado("Ayl", 376)
+	ciudad.calcular()
+	assert.equals(8,ciudad.cuantos("Juntos"))
+	assert.equals(3,ciudad.cuantos("Unidad"))
+	assert.equals(2,ciudad.cuantos("Evo"))
+	assert.equals(0,ciudad.cuantos("Pais"))
+	assert.equals(0,ciudad.cuantos("Fit"))
+	assert.equals(0,ciudad.cuantos("Ayl"))
+}
+
+test "testProvincia" {
+	var provincia = new Dont(35)
+	provincia.agregarResultado("Cambiemos", 3438)
+	provincia.agregarResultado("Unidad", 3241)
+	provincia.agregarResultado("Pais", 1463)
+	provincia.agregarResultado("Cumplir",561)
+	provincia.agregarResultado("Fit", 361)
+	provincia.calcular()
+	assert.equals(14,provincia.cuantos("Cambiemos"))
+	assert.equals(13,provincia.cuantos("Unidad"))
+	assert.equals(5,provincia.cuantos("Pais"))
+	assert.equals(2,provincia.cuantos("Cumplir"))
+	assert.equals(1,provincia.cuantos("Fit"))
+}
+
+}
