@@ -5,3 +5,5 @@ Los métodos de promedio mayor se caracterizan por dividir a través de distinto
 Fue creado por el jurista belga Victor d'Hondt en 1878.
 
 (https://www.wikiwand.com/es/Sistema_d%27Hondt)
+
+Testeado con datos reales de elecciones PASO 2017 (Pcia de Buenos Aires y CABA)
