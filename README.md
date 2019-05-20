@@ -1,5 +1,8 @@
 # Sistema d'Hondt
+ 
+[![Build Status](https://travis-ci.org/wollok/ejemploDhondt.svg?branch=master)](https://travis-ci.org/wollok/ejemploDhondt)
 
+ 
 El sistema d'Hondt es un método de promedio mayor para asignar escaños en sistemas de representación proporcional por listas electorales. 
 Los métodos de promedio mayor se caracterizan por dividir a través de distintos divisores los totales de los votos obtenidos por los distintos partidos, produciéndose secuencias de cocientes decrecientes para cada partido y asignándose los escaños a los promedios más altos.
 Fue creado por el jurista belga Victor d'Hondt en 1878.
