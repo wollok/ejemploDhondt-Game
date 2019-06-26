@@ -1,0 +1,23 @@
+import wollok.game.*
+import grafico.*
+
+
+program graficosimple {
+	var etiquetas = [
+		new Visual(image = "consenso.png"),
+		new Visual(image = "todos.png"),
+		new Visual(image = "izquierda.png"),
+		new Visual(image = "cambio.png"),
+		new Visual(image = "jugador.png")
+	]
+	
+	game.title("grafico de barras")
+	game.height(15)
+	game.width(20)
+	
+	
+	new GraficoBarras(valores = [10,7,0,4,0], etiquetas=etiquetas,position = game.at(3,3)).dibujar()
+	game.start()
+	
+	
+}

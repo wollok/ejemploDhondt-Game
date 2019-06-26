@@ -2,8 +2,9 @@ import dont.*
 
 describe "test dont" {
 
+
 test "testCiudad" {
-	var ciudad = new Dont(13)
+	var ciudad = new Dont(cargos = 13)
 	ciudad.agregarResultado("Juntos", 5013)
 	ciudad.agregarResultado("Unidad", 2096)
 	ciudad.agregarResultado("Evo", 1390)
@@ -20,7 +21,7 @@ test "testCiudad" {
 }
 
 test "testProvincia" {
-	var provincia = new Dont(35)
+	var provincia = new Dont(cargos = 35)
 	provincia.agregarResultado("Cambiemos", 3438)
 	provincia.agregarResultado("Unidad", 3241)
 	provincia.agregarResultado("Pais", 1463)
@@ -33,5 +34,17 @@ test "testProvincia" {
 	assert.equals(2,provincia.cuantos("Cumplir"))
 	assert.equals(1,provincia.cuantos("Fit"))
 }
+
+test "testX" {
+	var provincia = new Dont(cargos = 35)
+	provincia.agregarResultado("Cambiemos", 3438)
+	provincia.agregarResultado("Unidad", 3241)
+	provincia.agregarResultado("Pais", 1463)
+	provincia.agregarResultado("Cumplir",561)
+	provincia.agregarResultado("Fit", 361)
+	provincia.calcular()
+	assert.equals(14,provincia.totales().first().cantidad())
+	assert.equals([14,13,5,2,1],provincia.totales().map{x=>x.cantidad() })
+	}
 
 }
