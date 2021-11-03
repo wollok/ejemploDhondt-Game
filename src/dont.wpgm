@@ -3,25 +3,14 @@ import wollok.game.*
 import grafico.*
 
 program dont {
-	var valores
-	var etiquetas 
 	
+	var ciudad = new Dont(cargos = 13, valores = ["juntos.png"-> 4820,"todos.png" -> 2470, "libertad.png" -> 1370, "izquierda.png"->620, "autodeterminacion.png" -> 270])
 	
-	var ciudad = new Dont(cargos = 12)
-	
-	ciudad.agregarResultado("cambio", 40)
-	ciudad.agregarResultado("todos", 38)
-	ciudad.agregarResultado("consenso", 10)
-	ciudad.agregarResultado("izquierda",5)
-	ciudad.calcular()
-	
-	game.title("Sistema D'Hondt")
+	game.title("Sistema D'Hondt - PASO 2021 CABA")
 	game.height(15)
-	game.width(20)
+	game.width(16)
 	
-	etiquetas = ciudad.totales().map{x=>new Visual(image = x.partido()+".png")}
-	valores = ciudad.totales().map{x=>x.cantidad()}
-	new GraficoBarras(valores = valores, etiquetas = etiquetas,position = game.at(3,3)).dibujar()
+	new GraficoBarrasIconos(valores = ciudad.cantidades(), etiquetas = ciudad.partidos(),position = game.at(3,3)).dibujar()
 		
 	game.start()
 }

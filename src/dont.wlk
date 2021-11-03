@@ -1,30 +1,30 @@
 /** First Wollok example */
 class Dont {
-	var cocientes = []
-	var resultados = []
+
+	const valores
+	var cargos 
 	var ganadores = []
 	var property totales = []
-	var cargos
 	
-	method agregarResultado(partido,cantidad) {
-		resultados.add(new Resultado(partido = partido,cantidad = cantidad))
-	}
-	method calcular() {
-		cargos.times{i=>
-			cocientes.addAll(resultados.map{r=>r.dividir(i)})
+	method initialize() {
+		const resultados = valores.map{valor=> new Resultado(partido = valor.key(),cantidad = valor.value())}
+		const cocientes = []
+		cargos.times{cociente=>
+			cocientes.addAll(resultados.map{r=>new Resultado(partido = r.partido(), cantidad = r.cantidad()/cociente)})
 		}
 		cocientes.sortBy{a,b=>a.cantidad()>b.cantidad()}
 		ganadores = cocientes.take(cargos)
 		totales = resultados.map{resultado => new Resultado(partido = resultado.partido(), cantidad =  self.cuantos(resultado.partido()))}
-			.sortedBy{a,b=>a.cantidad() > b.cantidad()}
+	//		.sortedBy{a,b=>a.cantidad() > b.cantidad()}
 		
 	}
-	method cuantos(partido) = ganadores.count{c=>c.partido() == partido}
+	method cuantos(partido) = ganadores.count{resultado=>resultado.partido() == partido}
+	method partidos() = totales.map{resultado => resultado.partido()}
+	method cantidades() = totales.map{resultado => resultado.cantidad()}
+	
 }
 
 class Resultado {
 	var property partido
 	var property cantidad
-	
-	method dividir(cociente) = new Resultado(partido = partido,cantidad = cantidad/cociente)
 }

@@ -1,0 +1,13 @@
+import wollok.game.*
+import grafico.*
+
+
+program graficoConIconos {
+	game.title("Gráfico de barras con íconos")
+	game.height(15)
+	game.width(15)
+
+	new GraficoBarrasIconos(valores = [10,7,1,4], etiquetas=["consenso.png","todos.png","izquierda.png","cambio.png"], position = game.at(3,3)).dibujar()
+	game.start()
+}
+
