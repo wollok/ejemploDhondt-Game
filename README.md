@@ -1,6 +1,6 @@
 # Sistema d'Hondt
  
-[![Build Status](https://travis-ci.org/wollok/ejemploDhondt.svg?branch=master)](https://travis-ci.org/wollok/ejemploDhondt)
+[![build](https://github.com/wollok/ejemploDhondt-Game/actions/workflows/ci.yml/badge.svg)](https://github.com/wollok/ejemploDhondt-Game/actions/workflows/ci.yml)
 
 ![elecciones](./images/elecciones.jpg)
 
