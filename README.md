@@ -20,4 +20,4 @@ Se incluyen tres ejemplos:
 - Program de prueba del gráfico con datos de ejemplo, sin usar el sistema D'Hondt
 - Program con grafico y sistema dhondt con partidos presentados y valores estimados para 2019 en CABA
 
-![demo](./images/dhont.png)
+![demo](./images/dhont_game.png)

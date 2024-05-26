@@ -81,3 +81,7 @@
 {"level":"info","message":"Removing diagnostics from /home/dodain/workspace/wollok-dev/wollok-workspace/migracion-proyectos/ejemploDhondt-Game/assets/3.png","timestamp":"2024-05-25T04:03:28.845Z"}
 {"level":"info","message":"Removing diagnostics from /home/dodain/workspace/wollok-dev/wollok-workspace/migracion-proyectos/ejemploDhondt-Game/assets/4.png","timestamp":"2024-05-25T04:03:28.845Z"}
 {"exitCode":"SIGHUP","level":"info","message":"👾 Game executed pgmGraficoConIconos.graficoConIconos on /home/dodain/workspace/wollok-dev/wollok-workspace/migracion-proyectos/ejemploDhondt-Game","timeElapsed":76175,"timestamp":"2024-05-25T04:04:04.660Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":108,"timestamp":"2024-05-26T13:07:37.277Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///home/dodain/workspace/wollok-dev/wollok-workspace/migracion-proyectos/ejemploDhondt-Game","timestamp":"2024-05-26T13:07:37.279Z"}
+{"exitCode":"SIGHUP","level":"info","message":"👾 Game executed pgmGraficoConIconos.graficoConIconos on /home/dodain/workspace/wollok-dev/wollok-workspace/migracion-proyectos/ejemploDhondt-Game","timeElapsed":465574,"timestamp":"2024-05-26T13:15:36.914Z"}
+{"exitCode":"SIGHUP","level":"info","message":"👾 Game executed pgmGraficoConIconos.graficoConIconos on /home/dodain/workspace/wollok-dev/wollok-workspace/migracion-proyectos/ejemploDhondt-Game","timeElapsed":135631,"timestamp":"2024-05-26T13:17:58.977Z"}

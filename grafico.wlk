@@ -75,7 +75,7 @@ class GraficoBarrasIconos inherits GraficoBarras {
 	)
 	
 	override method nuevaEtiquetaVertical(etiqueta, pos) = new Icono(
-		image = ("nro" + etiqueta) + ".png",
+		image = ("number-" + etiqueta) + ".png",
 		position = pos
 	)
 }
